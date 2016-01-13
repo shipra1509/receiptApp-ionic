@@ -1,8 +1,10 @@
 <ion-view view-title="My  Receipts">
   <ion-content>
-    <h2>Item 1</h2>
-    <p>23/-</p>
-    <h2>Item 2</h2>
-    <p>50/-</p>
+  	<section ng-repeat="receipt in receipts">
+  		<h2>{{receipt.vendor}}</h2>
+  		<p>{{receipt.cost}}</p>
+  		<p>{{receipt.category}}</p>
+  		<p>{{receipt.description}}</p>
+  	</section>
   </ion-content>
 </ion-view>
